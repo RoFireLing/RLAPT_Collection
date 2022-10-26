@@ -1,0 +1,3 @@
+id-version: 34
+Fmeasure: 7.0	F2measure: 20.0
+Ftime: 4693.33	F2time: 7456.67

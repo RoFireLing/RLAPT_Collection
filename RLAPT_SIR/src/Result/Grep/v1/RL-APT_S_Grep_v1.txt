@@ -1,0 +1,3 @@
+id: 64
+Fmeasure: 73.0;F2measure: 214.0
+Tmeasure: 40196.67;T2measure: 95426.67

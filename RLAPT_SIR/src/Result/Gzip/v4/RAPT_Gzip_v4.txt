@@ -1,0 +1,3 @@
+id: 18
+Fmeasure: 31.0;F2measure: 272.0
+Tmeasure: 17900.0;T2measure: 105840.0
