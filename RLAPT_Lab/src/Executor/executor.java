@@ -6,7 +6,7 @@ package Executor;
  **/
 public class executor {
     public static void main(String[] args) {
-        String ObjectName = "ACMS";
+        String ObjectName = "";
         int tcnum = 500;
 
         RLAPT_rpt rpt = new RLAPT_rpt();

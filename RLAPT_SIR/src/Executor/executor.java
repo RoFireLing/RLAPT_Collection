@@ -27,18 +27,18 @@ public class executor {
      */
     public static void main(String[] args) {
         genearate_testseq();
-        String program_name = "Make";
-        String version = "v1";
+        String program_name = "";
+        String version = "";
 
         // Design Pattern-Factory Pattern
-//        test_factory tcf = new test_factory();
-//        String[] strategy = {"RPT", "DRT", "MAPT", "RAPT", "RLAPT_Q", "RLAPT_S"};
-//        for (int repeatTime = 0; repeatTime < 1; repeatTime++) {
-//            for (String s : strategy) {
-//                test executor = tcf.getTest(s);
-//                executor.executeTestCase(program_name, version, repeatTime);
-//            }
-//        }
+       test_factory tcf = new test_factory();
+       String[] strategy = {"RPT", "DRT", "DDRT", "MAPT", "RAPT", "RLAPT_Q", "RLAPT_S"};
+       for (int repeatTime = 0; repeatTime < 1; repeatTime++) {
+           for (String s : strategy) {
+               test executor = tcf.getTest(s);
+               executor.executeTestCase(program_name, version, repeatTime);
+           }
+       }
 
 //        rlapt_q qtest = new rlapt_q();
 //        for (int repeatTime = 0; repeatTime < 50; repeatTime++) {
@@ -57,16 +57,16 @@ public class executor {
 //            rtest.executeTestCase(program_name, version, repeatTime);
 //        }
 //        drt dtest = new drt();
-//        for (int repeatTime = 0; repeatTime < 50; repeatTime++) {
+//        for (int repeatTime = 0; repeatTime < 1; repeatTime++) {
 //            dtest.executeTestCase(program_name, version, repeatTime);
 //        }
 //        rpt rptest = new rpt();
 //        for (int repeatTime = 0; repeatTime < 1; repeatTime++) {
 //            rptest.executeTestCase(program_name, version, repeatTime);
 //        }
-        ddtrkm ddtest = new ddtrkm();
-        for (int repeatTime = 0; repeatTime < 50; repeatTime++) {
-            ddtest.executeTestCase(program_name, version, repeatTime);
-        }
+//         ddtrkm ddtest = new ddtrkm();
+//         for (int repeatTime = 0; repeatTime < 1; repeatTime++) {
+//             ddtest.executeTestCase(program_name, version, repeatTime);
+//         }
     }
 }

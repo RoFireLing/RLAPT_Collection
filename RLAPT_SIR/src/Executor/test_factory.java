@@ -8,6 +8,7 @@ public class test_factory {
     public test getTest(String testName) {
         if (testName == null) return null;
         if (testName.equalsIgnoreCase("DRT")) return new drt();
+        else if (testName.equalsIgnoreCase("DDRT")) return new ddrt();
         else if (testName.equalsIgnoreCase("RPT")) return new rpt();
         else if (testName.equalsIgnoreCase("MAPT")) return new mapt();
         else if (testName.equalsIgnoreCase("RAPT")) return new rapt();
