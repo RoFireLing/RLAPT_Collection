@@ -41,7 +41,7 @@ public class executor {
        }
 
 //        rlapt_q qtest = new rlapt_q();
-//        for (int repeatTime = 0; repeatTime < 50; repeatTime++) {
+//        for (int repeatTime = 0; repeatTime < 1; repeatTime++) {
 //            qtest.executeTestCase(program_name, version, repeatTime);
 //        }
 //        rlapt_s stest = new rlapt_s();
