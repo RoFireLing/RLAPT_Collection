@@ -1,3 +1,0 @@
-id: 48
-Fmeasure: 26.0;F2measure: 263.0
-Tmeasure: 10530.0;T2measure: 74516.67

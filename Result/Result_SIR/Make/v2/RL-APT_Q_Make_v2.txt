@@ -1,3 +1,0 @@
-id: 5
-Fmeasure: 96.0;F2measure: 0.0
-Tmeasure: 40606.67;T2measure: 0.0

@@ -1,7 +1,7 @@
 package TestCase;
 
 public class GenerateTestcases {
-    public static TestCase4ACMS[] createTestSuite4ACMS(int tcnum, int[] frameset) {
+    public static TestCase4ACMS[] createTestSuite4ACMS(int tcnum) {
         TestCase4ACMS[] testcases = new TestCase4ACMS[tcnum];
         Random random = new Random(0);
         Boolean[] ISSTUDENT = {true, false};
@@ -23,7 +23,7 @@ public class GenerateTestcases {
         return testcases;
     }
 
-    public static TestCase4CUBS[] createTestSuite4CUBS(int tcnum, int[] frameset) {
+    public static TestCase4CUBS[] createTestSuite4CUBS(int tcnum) {
         TestCase4CUBS[] testcases = new TestCase4CUBS[tcnum];
         Random random = new Random(0);
         String[] types = {"A", "B", "a", "b"};
@@ -46,7 +46,7 @@ public class GenerateTestcases {
         return testcases;
     }
 
-    public static TestCase4ERS[] createTestSuite4ERS(int tcnum, int[] frameset) {
+    public static TestCase4ERS[] createTestSuite4ERS(int tcnum) {
         TestCase4ERS[] testcases = new TestCase4ERS[tcnum];
         Random random = new Random(0);
         String[] levels = {"seniormanager", "manager", "supervisor"};

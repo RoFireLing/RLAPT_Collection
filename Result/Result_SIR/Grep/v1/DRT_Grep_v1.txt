@@ -1,3 +1,0 @@
-id: 159
-Fmeasure: 137.0;F2measure: 363.0
-Tmeasure: 52800.0;T2measure: 136313.33000000002

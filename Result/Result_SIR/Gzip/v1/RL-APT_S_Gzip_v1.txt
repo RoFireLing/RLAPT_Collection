@@ -1,3 +1,0 @@
-id: 121
-Fmeasure: 26.0;F2measure: 164.0
-Tmeasure: 10313.34;T2measure: 35036.67

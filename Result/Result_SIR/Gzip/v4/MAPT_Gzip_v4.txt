@@ -1,3 +1,0 @@
-id: 14
-Fmeasure: 33.0;F2measure: 392.0
-Tmeasure: 16513.34;T2measure: 149923.34
