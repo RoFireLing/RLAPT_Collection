@@ -65,7 +65,6 @@ public class DRT {
                     }
                     sum += DRT[i];
                 }
-//                sum += DRT[i];
             }
             DRT[formerSourcePartitionIndex] = 1 - sum;
         } else {

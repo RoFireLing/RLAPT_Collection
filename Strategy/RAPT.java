@@ -88,18 +88,6 @@ public class RAPT {
     public void adjustRAPT(int formersourcePartitionIndex, boolean isKilledMutant) {
         double old_i = RAPT[formersourcePartitionIndex];
         if (isKilledMutant) {
-//            double sum = 0;
-//            for (int i = 0; i < RAPT.length; i++) {
-//                if (i != formersourcePartitionIndex) {
-//                    RAPT[i] -= (1 + Math.log(rew[formersourcePartitionIndex]))
-//                            * RAPT_epsilon / (RAPT.length - 1);
-//                    if (RAPT[i] < 0) {
-//                        RAPT[i] = 0;
-//                    }
-//                }
-//                sum += RAPT[i];
-//            }
-//            RAPT[formersourcePartitionIndex] = 1 - sum;
             rew[formersourcePartitionIndex]++;
             pun[formersourcePartitionIndex] = 0;
         } else {
@@ -115,7 +103,6 @@ public class RAPT {
                         }
                         sum += RAPT[i];
                     }
-//                    sum += RAPT[i];
                 }
                 RAPT[formersourcePartitionIndex] = 1 - sum;
                 rew[formersourcePartitionIndex] = 0;

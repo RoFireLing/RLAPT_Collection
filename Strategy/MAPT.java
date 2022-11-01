@@ -65,7 +65,6 @@ public class MAPT {
                     }
                     sum += MAPT[formerSourcePartitionIndex][i];
                 }
-//                sum += MAPT[formerSourcePartitionIndex][i];
             }
             MAPT[formerSourcePartitionIndex][formerSourcePartitionIndex] = 1 - sum;
         } else {

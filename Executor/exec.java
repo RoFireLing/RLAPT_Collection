@@ -1,23 +1,20 @@
 package Executor;
 
-public class tech implements test {
-    @Override
-    public void executeTestCase(String program_name, int repeatTimes) {
-
+public class exec {
+    public void executeTestCase(String program_name) {
         // Time Recorder
         TimeRecorder timeRecorder = new TimeRecorder();
-
         // Measure Recorder
         MeasureRecorder measureRecorder = new MeasureRecorder();
 
         for (int i = 0; i < repeat_num; i++) {
-            System.out.println(program_name + " use TECH ; now testing " + String.valueOf(i + 1));
+            System.out.println(program_name + " use current_strategy ; now testing " + String.valueOf(i + 1));
 
             // initialize current technique
-            Strategy curr_tech = new tech_in_strategy();
+            Strategy curr_tech = new technique_in_strategy();
             curr_tech.initialize();
 
-            // get Mutant
+            // get used Mutant List
             List<Integer> used_mutant;
 
             // Initialize an object that records the number of test cases executed
@@ -35,10 +32,10 @@ public class tech implements test {
             int nextPartitionIndex = 0;
 
             // get/generate test cases and obtain its corresponding partition
-            testcase[] tc;
-            tc.get_partition();
+            testcase[] tc = test_case_generation();
+            tc->test_case_partition();
 
-            for (int j = 0; j < max_tc_num; j++) {
+            for (int j = 0; j < tc_num_upperbound; j++) {
                 // counter increment
                 counter++;
 
@@ -67,8 +64,12 @@ public class tech implements test {
                 // select test case
                 testcase testcase_now = tc.get_from_partition(partitionIndex);
 
+                // execute
+                expected_result = testcase_now->run_in_original_version();
+                real_result = testcase_now->run_in_mutated_version();
+
                 // Flag: indicates whether the test case kills the mutant
-                boolean isKilledMutants = testcase_now.execute();
+                boolean isKilledMutants = expected_result == real_result;
 
                 if (isKilledMutants) {
                     used_mutant.remove_curr_mut();
@@ -94,7 +95,7 @@ public class tech implements test {
 
                 long start2 = System.nanoTime();
                 // Adjust the test profile according to the test result
-                curr_tech.adjust();
+                curr_tech.adjust_profile();
                 long end2 = System.nanoTime();
 
                 // Record the time required -> adjust
@@ -104,6 +105,7 @@ public class tech implements test {
                     onceTimeRecord.secondExecutingTime(end2 - start2);
                 }
             }
+
             if ((mutant_num == 1 && onceMeasureRecord.getFmeasure() != 0) || onceMeasureRecord.getF2measure() != 0) {
                 measureRecorder.addFMeasure(onceMeasureRecord.getFmeasure());
                 measureRecorder.addF2Measure(onceMeasureRecord.getF2measure());
@@ -121,9 +123,9 @@ public class tech implements test {
         }
 
         // record result in txt
-        String txtLogName = "TECH_" + program_name + ".txt";
+        String txtLogName = "curr_tech_" + program_name + ".txt";
         recordResult(txtLogName, repeatTimes, measureRecorder.getAverageFmeasure(), measureRecorder.getAverageF2measure(), timeRecorder.getAverageSelectFirstTestCaseTime() + timeRecorder.getAverageGenerateFirstTestCaseTime() + timeRecorder.getAverageExecuteFirstTestCaseTime(), timeRecorder.getAverageSelectSecondTestCaseTime() + timeRecorder.getAverageGenerateSecondTestCaseTime() + timeRecorder.getAverageExecuteSecondTestCaseTime());
-        String txtSpecificName = "TECH_" + program_name + "_Content.txt";
+        String txtSpecificName = "curr_tech_" + program_name + "_Content.txt";
         recordSpecificResult(txtSpecificName, repeatTimes, measureRecorder.getFmeasureArray(), measureRecorder.getF2measureArray(), timeRecorder.getFirstTotalArray(), timeRecorder.getSecondTotalArray());
     }
 }
