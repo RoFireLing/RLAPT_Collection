@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3748c5-d1bb-4bc5-a07a-4ff0be111daf" name="变更" comment="publish ver.">
+    <list default="true" id="2c3748c5-d1bb-4bc5-a07a-4ff0be111daf" name="变更" comment="final">
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Executor/tech.java" beforeDir="false" afterPath="$PROJECT_DIR$/Executor/exec.java" afterDir="false" />
@@ -671,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667215852039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final">
+      <created>1667272287030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667272287030</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -687,6 +694,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="publish ver." />
-    <option name="LAST_COMMIT_MESSAGE" value="publish ver." />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
 </project>
