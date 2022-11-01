@@ -15,8 +15,8 @@
 
 * For the programs in SIR, select **one category** and partition the input domain according to its choices;
 * For the laboratory programs, randomly selected **two categories** and then partitioned their input domain according to
-  the combinations of choices (the categories and corresponding choices of ACMS, CUBS and ERS are shown in **
-  Categories.pdf**).
+  the combinations of choices (the categories and corresponding choices of ACMS, CUBS and ERS are shown in 
+  **Categories.pdf**).
 
 ### Strategy
 
@@ -34,10 +34,9 @@
 ### Utils
 
 * A series of **Functions for recording metrics**
-* **Function for calculating /delta/** for 「DRT」 and 「RAPT」
+* **Function for calculating /delta** for 「DRT」 and 「RAPT」
 * **Function for K-Medoid Clustering**
 
 ***
-***
 
-### ⏩ To get Ubuntu here (https://ubuntu.com/)
+#### ⏩ To get Ubuntu here (https://ubuntu.com/)
