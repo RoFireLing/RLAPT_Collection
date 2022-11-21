@@ -1,7 +1,5 @@
 # A Reinforcement Learning-based Approach to Partition Testing (RLAPT)
 
-***
-
 ### Subject Programs
 
 * Lab  
@@ -37,6 +35,16 @@
 * **Function for calculating /delta** for 「DRT」 and 「RAPT」
 * **Function for K-Medoid Clustering**
 
+</br>
+
+#### ⏩ To get [Ubuntu](https://ubuntu.com/)
+
 ***
 
-#### ⏩ To get Ubuntu here (https://ubuntu.com/)
+## Repositories List
+
+1. ~~[RLAPT4SIR(unpublicized)](https://github.com/RoFireLing/RL-APT_Expand)~~
+2. ~~[RLAPT4Lab(unpublicized)](https://github.com/RoFireLing/RL-APT)~~
+3. ~~[Supplementary Experiment_D-DRT(unpublicized)](https://github.com/RoFireLing/RLAPT_DDRTKM)~~
+4. [RLAPT_base-on-FDMT](https://github.com/RoFireLing/RL-APT_FDMTbased)
+5. ~~[Testing Techniques(unpublicized)](https://github.com/RoFireLing/RL-APT_Strategy)~~
