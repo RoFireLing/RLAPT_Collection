@@ -47,4 +47,4 @@
 2. ~~[RLAPT4Lab(unpublicized)](https://github.com/RoFireLing/RL-APT)~~
 3. ~~[Supplementary Experiment_D-DRT(unpublicized)](https://github.com/RoFireLing/RLAPT_DDRTKM)~~
 4. [RLAPT_base-on-FDMT](https://github.com/RoFireLing/RL-APT_FDMTbased)
-5. ~~[Testing Techniques(unpublicized)](https://github.com/RoFireLing/RL-APT_Strategy)~~
+5. [Implementation4TestingTechniques](https://github.com/RoFireLing/RL-APT_Strategy)
